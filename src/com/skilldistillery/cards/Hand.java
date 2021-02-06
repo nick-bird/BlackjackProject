@@ -9,17 +9,16 @@ public abstract class Hand {
 	public Hand() {
 		hand = new ArrayList<Card>();
 	}
-	
-	
+
 	public void addCard(Card card) {
 		hand.add(card);
 	}
-	
+
 	public void remove() {
 		hand.removeAll(hand);
 	}
-	public  abstract int getHandValue();
 
+	public abstract int getHandValue();
 
 	@Override
 	public String toString() {
@@ -29,11 +28,9 @@ public abstract class Hand {
 		}
 		return sb.toString();
 	}
-	
-	
-	public String printCard(int i ) {
-	return	hand.get(i).toString();
+
+	public String printCard(int i) {
+		return hand.get(i).toString();
 	}
-	
-	
+
 }
