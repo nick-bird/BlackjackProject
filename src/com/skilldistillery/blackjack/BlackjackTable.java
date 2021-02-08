@@ -11,25 +11,6 @@ public class BlackjackTable {
 	private boolean roundGoing = true;
 	private boolean keepHitting = true;
 
-	public void checkForBustOrBlackjack(BlackjackHand hand1, BlackjackHand hand2) {
-		if (hand1.isBust()) {
-			System.out.println("You have gone bust");
-			roundGoing = false;
-		}
-		if (hand2.isBust()) {
-			System.out.println("The dealer has bust. You win");
-			roundGoing = false;
-		}
-		if (hand1.isBlackjack()) {
-			System.out.println("Blackjack!");
-			roundGoing = false;
-		}
-		if (hand2.isBlackjack()) {
-			System.out.println("The dealer has Blackjack");
-			roundGoing = false;
-		}
-	}
-
 	public boolean checkForPlayerBust(BlackjackHand hand) {
 		if (hand.isBust()) {
 			System.out.println("You have gone bust");
@@ -115,8 +96,6 @@ public class BlackjackTable {
 			if (roundGoing) {
 				System.out.println("The dealer flips the facedown card to reveal the hand: ");
 				dealer.printDealerHand();
-				// checkForDealerBlackJack(dealer.getHand());
-				// checkForDealerBust(dealer.getHand());
 
 				while (dealer.dealerHit(dealer.getHand())) {
 					System.out.println("The dealer draws a: ");
@@ -149,4 +128,3 @@ public class BlackjackTable {
 		}
 	}
 }
-
