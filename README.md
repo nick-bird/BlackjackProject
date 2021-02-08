@@ -4,5 +4,5 @@ This project is a game of Blackjack played on the command line. Upon starting, a
 ### Technologies Used
 This project utilizes object oriented design. There are unique classes representing cards, a deck, and a hand of cards, so that they can be re-used in other games. These classes are inherited and used by another set of unique classes which implement changes to fit the rules of the game. There is a 'game table' class, where the 'player', 'dealer', and 'deck of cards' live, and the game logic is executed.
 
-###Lessons Learned
+### Lessons Learned
 This project provided valuable lessons in the value of properly planning and designing code before starting to write it. Since this project involves a class hierarchy with multiple moving parts, it was necessary to plan out where and how data will be stored, and how methods will be organized and implemented. After creating a UML diagram for my application, it was possible to write all of the code much more quickly.
