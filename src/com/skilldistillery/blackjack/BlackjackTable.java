@@ -50,7 +50,7 @@ public class BlackjackTable {
 		if (hand1.getHandValue() > hand2.getHandValue() && hand1.getHandValue() < 22) {
 			System.out.println("You have won");
 			roundGoing = false;
-		} else if (hand1.getHandValue() < hand2.getHandValue() && hand2.getHandValue() < 22) {
+		} else if (hand1.getHandValue() <= hand2.getHandValue() && hand2.getHandValue() < 22) {
 			System.out.println("The dealer has won");
 			roundGoing = false;
 		}
